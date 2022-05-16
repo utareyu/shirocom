@@ -8,12 +8,9 @@
 	"data":[
 		{"title":"", "date":"", "cont":
 			[
+				{"member":0, "data":""},
 				{"member":0, "data":"", "act":[{"emoji":"spaghetti","cnt":3}]},
-				{"member":0, "data":"", "act":[{"emoji":"spaghetti","cnt":3}]},
-				{"member":0, "data":"", "act":[{"emoji":"spaghetti","cnt":3}]},
-				{"member":0, "data":"", "act":[{"emoji":"spaghetti","cnt":3}]},
-				{"member":0, "data":"", "act":[{"emoji":"spaghetti","cnt":3}]},
-				{"member":0, "data":"", "act":[{"emoji":"spaghetti","cnt":3}]}
+				{"member":0, "data":"", "act":[{"emoji":"spaghetti","cnt":3},{"emoji":"spaghetti","cnt":3}]}
 			]
 		},
 		{"title":"金のシーズンパスタ", "date":220327, "cont":

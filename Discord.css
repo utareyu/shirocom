@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+:root[theme='Discord'] {
+	--color-text: aliceblue;
+	--color-bg: #36393f;
+}
+
+*{
+	border: 1px solid purple;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	align-items: left;
+}
+
+body {
+	font-family: sans-serif;
+	background: var(--color-bg);
+	color: var(--color-text);
+	margin: 0;
+}
+
+header {
+	text-align: left;
+	background: #0003;
+	padding: 5px;
+	padding-left: 1em;
+}
+
+main{
+	margin: 8px;
+}
+
+h1{
+	margin: 0em;
+	margin-left: 1em;
+}
+
+.main {
+	text-align: center;
+}
+
+nav {
+	padding: 3px;
+	background: #2f3136;
+}
+nav>p{
+	padding: 1em;
+	border-radius: 2px;
+	/* border: 1px solid black; */
+}
+nav>p:hover{
+	background: #3c3f45;
+}
+
+/* https://webparts.cman.jp/balloon/over/ */
+.s {
+  position   : relative;                /* 指定した分だけ相対的に移動 */
+}
+.s:hover .balloon {
+  display: inline;                /* インライン要素として表示 */
+}
+.balloon {
+	border-radius: 3px;
+  position   : absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: #18191c;       /* 背景色（透明度） */
+  width:180px;                          /* 吹き出し全体の幅 */
+  left : 30%;                           /* 表示位置 */
+  bottom : 100%;                        /* 表示位置 */
+  margin-bottom : 12px;                 /* 表示位置 */
+  font-size: 80%;                       /* 文字サイズ */
+}
+
+/* END */
+
+footer {
+	background: #0003;
+	text-align: center;
+}
+
+footer > p {
+	margin: 0;
+	padding: 0.5em;
+}
+
+li {
+	line-height: 1.5em;
+}
+
+main
+	> section
+	+ section {
+	margin-top: 40px;
+}
+
+.container.ico{
+	margin: 5px;
+	border-radius: 50%;
+}
+.ico{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.post{
+	text-align: left;
+	flex-direction: row;
+	flex-flow: row;
+}
+.content{
+	flex-direction: column;
+}
+.member{
+	padding: 5px 0;
+}
+.act div{
+	margin: 5px 10px 5px 0;
+	padding: 3px;
+	border: 1px solid #5562ea;
+	border-radius: 3px;
+	background-color: #3a3f59;
+}
+
+.act div:hover{
+	background-color: #fff2;
+}
+
+
+p {
+	margin: 4px 0 0 0; 
+}
+
+code{
+	font-family: consolas, monospace;
+	font-size: 80%;
+	color: #fff;
+	margin: 0 5px;
+	border: 1px solid #424849;
+	padding: 1px 2px;
+	border-radius: 5px;
+	background-color: var(--color-codebg);
+}
+
+.cred{	
+	color: #f92672;
+}
+
+.data a{
+	color: #00aff4;
+}
+
