@@ -69,7 +69,6 @@ nav>p:hover{
   display: inline;                /* インライン要素として表示 */
 }
 .balloon {
-	border-radius: 3px;
   position   : absolute;                /* 親要素を基準 */
   display: none;                        /* 要素を非表示 */
   padding: 2px;                         /* テキストの前後の余白 */
@@ -79,6 +78,7 @@ nav>p:hover{
   bottom : 100%;                        /* 表示位置 */
   margin-bottom : 12px;                 /* 表示位置 */
   font-size: 80%;                       /* 文字サイズ */
+	border-radius: 5px;
 }
 
 /* END */
@@ -104,13 +104,12 @@ main
 }
 
 .container.ico{
-	margin: 5px;
-	border-radius: 50%;
+	margin: 10px;
 }
 .ico{
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 35px;
+	height: 35px;
 }
 
 .post{
