@@ -1,5 +1,15 @@
-const mjson = fetch('https://utareyu.github.io/shirocom/main.json')
+fetch('https://utareyu.github.io/shirocom/main.json')
   .then(response => response.json())
-  .then(data => console.log(data));
-console.log(mjson);
-// document.getElementById("hr").appendChild(mjson);
+  .then(function(x){
+		
+		for(i=0;i<=9;i++){
+			const ch = document.createElement('p');
+			let d = x["data"][1]["cont"][i]["data"];g
+
+			d=d.replace(/<br>/g,'\n');
+
+			console.log(d);
+			ch.textContent = d;
+			// document.getElementById("hrp").appendChild(ch);
+		}
+	});
