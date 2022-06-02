@@ -5,10 +5,10 @@
 	--color-bg: #36393f;
 }
 
-*{
+/* *{
 	border: 1px solid purple;
-}
-#hrp *{
+} */
+#dest *{
 	border: 1px solid hsl(208, 100%, 70%);
 }
 
