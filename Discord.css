@@ -159,4 +159,9 @@ code{
 	color: #00aff4;
 	text-decoration: none;
 }
-
+a:active{
+	color: #025b9e;
+}
+a:visited{
+	color: #8350fb;
+}
