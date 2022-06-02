@@ -1,6 +1,5 @@
 @charset "utf-8";
-
-:root[theme='Discord'] {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');:root[theme='Discord'] {
 	--color-text: aliceblue;
 	--color-bg: #36393f;
 }
@@ -25,7 +24,8 @@
 }
 
 body {
-	font-family: sans-serif;
+	
+	font-family: 'Noto Sans JP',sans-serif;
 	background: var(--color-bg);
 	color: var(--color-text);
 	margin: 0;
@@ -124,7 +124,8 @@ main
 	flex-direction: column;
 }
 .member{
-	padding: 5px 0;
+	padding: 5px 0 0 0;
+	font-weight: 500;
 }
 .act div{
 	margin: 5px 10px 5px 0;
@@ -140,7 +141,11 @@ main
 
 
 p {
-	margin: 4px 0 0 0; 
+	margin: 0 0 4px 0; 
+	color: #dcddde;
+}
+.data p{
+	font-weight: 100;
 }
 
 code{
