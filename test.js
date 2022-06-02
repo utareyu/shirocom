@@ -5,46 +5,47 @@ fetch('https://utareyu.github.io/shirocom/main.json')
 		for(i in Object.keys(x["data"][dsel]["cont"])){
 			let d = x["data"][dsel]["cont"][i]["data"];
 			const p = document.createElement('p');
-			const a = document.createElement('a');
-			const br = document.createElement('br');
-			const div = document.createElement('div')
+			// const a = document.createElement('a');
+			const img = document.createElement('img');
 			const dest = document.getElementById("hrp");
-
-			// --- a処理
-			let aTagv = "";
-			let aTag=d.match(/http.*/g,'\n');
-			if(aTag!=null){
-				aTag=aTag[0].replace(/".*/g,'');
-				if(aTag.length>=40){
-					 aTagv=aTag.substr(0,26)+"…"+aTag.substr(aTag.length-20);
+			
+			// p=innerHTML(x);
+			y=x["data"][dsel]["cont"][i]["data"];
+			console.log(typeof(y) +"'"+(y.charAt(0)=='<'?1:0)+(y.charAt(1)=='a'?1:0)+"' : "+ y);
+			if(y.charAt(0)=='<'){
+				dest.insertAdjacentHTML("beforeend",y);
+				// --- a処理
+				if(y.charAt(1)=='a'){
+					const a = dest.lastElementChild;
+					let ahref=d.match(/http.*/g,'\n').join().replace(/".*/g,'');
+					console.log(ahref);
+					if(ahref.length>=40){
+						ahref=ahref.substr(0,26)+"…"+ahref.substr(ahref.length-20);
+					}
+					a.textContent=ahref;
 				}
-				a.setAttribute("href",aTag);
-				a.textContent=aTagv;
-				dest.appendChild(a);
-				// console.log(aTag);
-				continue;
+				// ---
+			} else {
+				p.innerHTML=y;
+				dest.appendChild(p);
 			}
 
-			// --- br処理
-			if(d.match("<br>")){
-				let work;
-				d = d.split('<br>');
-				console.log(d);
-				for(i in d){
-					p.textContent=i+": "+d[i];
-					p.id= i;
-					console.log(d[i]);
-					console.log(p);
-					div.appendChild(p);
-				}
-				div.id = "data";
-				dest.appendChild(div);
-			continue;
-			}
+			// ---a処理
+			// let aTagv = "";
+			// let ahref=d.match(/http.*/g,'\n');
+			// if(ahref!=null){
+			// 	ahref=ahref[0].replace(/".*/g,'');
+			// 	if(ahref.length>=40){
+			// 		 aTagv=ahref.substr(0,26)+"…"+ahref.substr(ahref.length-20);
+			// 	}
+			// 	a.setAttribute("href",ahref);
+			// 	a.textContent=aTagv;
+			// 	dest.appendChild(a);
+			// 	continue;
+			// }
 
-			// --- data出力
-			p.textContent = d;
-			dest.appendChild(p);
+			// p.innerHTML=d;
+			// dest.appendChild(p);
 
 		}
 			console.log(Object.keys(x["data"][1]["cont"]).length);
