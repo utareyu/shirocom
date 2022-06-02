@@ -28,7 +28,6 @@ fetch('https://utareyu.github.io/shirocom/main.json')
 			const dest = document.getElementById("dest");
 			const p = document.createElement('p');
 			const m = x["data"][dsel]["cont"][i]["member"];
-			const y=x["data"][dsel]["cont"][i]["data"];
 
 			// console.log(mem[m]);
 			p.innerHTML=mem[m];
@@ -36,10 +35,10 @@ fetch('https://utareyu.github.io/shirocom/main.json')
 			dest.insertAdjacentElement("beforeend",p);
 
 			// console.log(typeof(y) +"'"+(y.charAt(1)=='a'?"lnk":"")+(y.substr(0,3)=="<img"?"img":"")+"' : "+ y);
-			if(y.charAt(0)=='<'){
-				dest.insertAdjacentHTML("beforeend",y);
+			if(d.charAt(0)=='<'){
+				dest.insertAdjacentHTML("beforeend",d);
 				// # a処理
-				if(y.charAt(1)=='a'){
+				if(d.charAt(1)=='a'){
 					const a = dest.lastElementChild;
 					let ahref=d.match(/http.*/g,'\n').join().replace(/".*/g,'');
 					if(ahref.length>=40){
@@ -48,7 +47,8 @@ fetch('https://utareyu.github.io/shirocom/main.json')
 					a.textContent=ahref;
 				}
 			} else {
-				p.innerHTML=y;
+				d=d.replace(/<.+script.*>/g,'-すくりぷと-');
+				p.innerHTML=d;
 				p.className="data";
 				dest.insertAdjacentElement("beforeend",p);
 			}
