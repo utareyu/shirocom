@@ -10,6 +10,7 @@ function run(x){
 	fetch('https://utareyu.github.io/shirocom/test.json')
 		.then(response => response.json())
 		.then(function(x){
+			document.getElementById("head").textContent="";
 			document.getElementById("nav").textContent="";
 			document.getElementById("main").textContent="";
 
@@ -20,9 +21,13 @@ function run(x){
 				const p = document.createElement('p');
 				let wk ="";
 				let t=d["title"];
-				let da=d["date"];
+				let da=x["data"][dsel]["date"];
+				
+				dest.textContent=x["data"][dsel]["title"]+" ";
 
-				dest.textContent=x["data"][dsel]["title"];
+				wk="<span style=\"font-size:50%;font-weight:400;\">"+da+"</span>";
+				console.log(dest);
+				dest.insertAdjacentHTML("beforeend",wk);
 
 				dest = document.getElementById("nav");
 
@@ -144,6 +149,4 @@ function run(x){
 			}
 				console.log(Object.keys(x["data"][1]["cont"]).length);
 		})	
-}
-
-	;
+};
