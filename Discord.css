@@ -17,19 +17,6 @@
 	}
 }
 
-/* #main{
-	border: 1px solid hsl(120, 100%, 70%);
-}
-#main>*{
-	border: 1px solid aliceblue;
-}
-#main>*>*{
-	border: 1px solid hsl(60, 100%, 70%);
-}
-#main>*>*>*{
-	border: 1px solid hsl(0, 100%, 70%);
-} */
-
 img.emoji {
   height: 1em;
   width: 1em;
