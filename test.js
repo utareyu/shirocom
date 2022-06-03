@@ -7,7 +7,7 @@
 
 function run(x){
 	let dsel=x;
-	fetch('https://utareyu.github.io/shirocom/main.json')
+	fetch('https://utareyu.github.io/shirocom/test.json')
 		.then(response => response.json())
 		.then(function(x){
 			document.getElementById("nav").textContent="";
