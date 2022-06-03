@@ -21,7 +21,16 @@ fetch('https://utareyu.github.io/shirocom/main.json')
 			let t=d["title"];
 			let da=d["date"];
 
-			console.log(t+": "+da);
+			if(t.length>10){
+				t=t.substr(0,9)+"…";
+			}
+			p.innerHTML=t;
+			p.onclick="dsel=\""+i+"\""
+			console.log(dest);
+			dest.insertAdjacentElement("beforeend",p);
+
+
+			console.log(t);
 		}
 
 		const mem =[[],[]];

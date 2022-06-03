@@ -60,6 +60,7 @@ h1{
 nav {
 	padding: 3px;
 	background: #2f3136;
+	font-size: 80%;
 }
 nav>p{
 	padding: 1em;
