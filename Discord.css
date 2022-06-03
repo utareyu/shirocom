@@ -1,7 +1,20 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');:root[theme='Discord'] {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
+:root[theme='Discord'] {
 	--color-text: aliceblue;
 	--color-bg: #36393f;
+}
+
+@media(max-width:479px){
+	body{
+		font-size: 80%;
+	}
+	img{
+		width: 80%;
+	}
+	nav>p{
+		width:6em;
+	}
 }
 
 /* #main{
@@ -72,7 +85,6 @@ nav {
 nav>p{
 	padding: 1em;
 	border-radius: 2px;
-	/* border: 1px solid black; */
 }
 nav>p:hover{
 	background: #3c3f45;
