@@ -3,31 +3,32 @@
 //   ■   ■■■■■  ■■■    ■
 //   ■   ■         ■   ■
 //   ■   ■■■■■  ■■■    ■
-const dsel=1;
+let dsel=1;
 
 fetch('https://utareyu.github.io/shirocom/main.json')
   .then(response => response.json())
   .then(function(x){
 		document.getElementById("main").textContent="";
 
-
-
 		for(i in Object.keys(x["data"])){
 			let d = x["data"][i];
-			let dest = document.getElementById("nav");
+			let dest = document.getElementById("head");
 			const div = document.createElement('div');
 			const p = document.createElement('p');
 			let wk ="";
 			let t=d["title"];
 			let da=d["date"];
 
+			dest.textContent=x["data"][dsel]["title"];
+
+			dest = document.getElementById("nav");
+
 			if(t.length>10){
 				t=t.substr(0,9)+"…";
 			}
-			p.innerHTML=t;
-			p.onclick="dsel=\""+i+"\""
+			wk="<p>"+t+"</p>";
 			console.log(dest);
-			dest.insertAdjacentElement("beforeend",p);
+			dest.insertAdjacentHTML("beforeend",wk);
 
 
 			console.log(t);
