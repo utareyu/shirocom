@@ -17,6 +17,13 @@
 	border: 1px solid hsl(0, 100%, 70%);
 } */
 
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
+
 .column {
 	display: flex;
 	flex-direction: column;
