@@ -3,7 +3,6 @@
 //   ■   ■■■■■  ■■■    ■
 //   ■   ■         ■   ■
 //   ■   ■■■■■  ■■■    ■
-// let dsel=1;
 
 function run(x){
 	let dsel=x;
