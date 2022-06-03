@@ -45,7 +45,6 @@ function run(x){
 			}
 
 			const mem =[[],[]];
-			console.log(Object.keys(x["member"]));
 			for(i in Object.keys(x["member"]))mem[0][i] = x["member"][i]["name"];
 			for(i in Object.keys(x["member"]))mem[1][i] ="m"+ i+".ico";
 			console.log(mem);
@@ -54,11 +53,11 @@ function run(x){
 				console.log(i);
 				
 				d = x["data"][dsel]["cont"][i]["data"];
-				let dest = document.getElementById("main");
+				dest = document.getElementById("main");
 				const div = document.createElement('div');
 				const p = document.createElement('p');
 				const m = x["data"][dsel]["cont"][i]["member"];
-				let wk ="";
+				wk ="";
 
 				const post="";
 
