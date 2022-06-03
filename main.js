@@ -44,13 +44,13 @@ function run(x){
 
 			for(i in Object.keys(x["data"][dsel]["cont"])){
 				console.log(i);
-				// ##### data処理
-				let d = x["data"][dsel]["cont"][i]["data"];
-				let dest = document.getElementById("main");
+				
+				d = x["data"][dsel]["cont"][i]["data"];
+				dest = document.getElementById("main");
 				const div = document.createElement('div');
 				const p = document.createElement('p');
 				const m = x["data"][dsel]["cont"][i]["member"];
-				let wk ="";
+				wk ="";
 
 				const post="";
 
@@ -102,7 +102,7 @@ function run(x){
 					console.log(dest);
 					dest.insertAdjacentElement("beforeend",p);
 				}
-				// act
+				
 				if("act" in x["data"][dsel]["cont"][i]){
 
 					//div.act

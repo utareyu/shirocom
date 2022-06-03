@@ -109,7 +109,7 @@ function run(x){
 					console.log(dest);
 					dest.insertAdjacentElement("beforeend",p);
 				}
-				// act
+				
 				if("act" in x["data"][dsel]["cont"][i]){
 
 					//div.act
