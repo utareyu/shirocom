@@ -1,6 +1,6 @@
 function run(x){
 	let dsel=x;
-	fetch('https://utareyu.github.io/shirocom/test.json')
+	fetch('https://utareyu.github.io/shirocom/main.json')
 		.then(response => response.json())
 		.then(function(x){
 			document.getElementById("head").textContent="";
