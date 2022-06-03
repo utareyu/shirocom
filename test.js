@@ -147,6 +147,6 @@ function run(x){
 					}
 				}
 			}
-				console.log(Object.keys(x["data"][dsel]["cont"]).length);
+			console.log(Object.keys(x["data"][dsel]["cont"]).length);
 		})	
 };
