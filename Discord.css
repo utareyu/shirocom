@@ -4,12 +4,18 @@
 	--color-bg: #36393f;
 }
 
-/* *{
-	border: 1px solid purple;
-} */
-#dest *{
-	border: 1px solid hsl(208, 100%, 70%);
+/* #main{
+	border: 1px solid hsl(120, 100%, 70%);
 }
+#main>*{
+	border: 1px solid aliceblue;
+}
+#main>*>*{
+	border: 1px solid hsl(60, 100%, 70%);
+}
+#main>*>*>*{
+	border: 1px solid hsl(0, 100%, 70%);
+} */
 
 .column {
 	display: flex;
