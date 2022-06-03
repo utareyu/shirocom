@@ -62,12 +62,10 @@ function run(x){
 				
 				//div .ico
 				dest=document.getElementById("p"+i);
-				wk="<div class=\"container ico\"><img class=\"ico\" src=\"https://mcbeeringi.github.io/shirokepu/img/m"+m+".png\"></div>";
-				// wk="<div class=\"container ico\"><img class=\"ico\" src=\"ico\\m"+m+".png\"></div>";
+				// wk="<div class=\"container ico\"><img class=\"ico\" src=\"https://mcbeeringi.github.io/shirokepu/img/m"+m+".png\"></div>";
+				wk="<div class=\"container ico\"><img class=\"ico\" src=\"ico\\m"+m+".png\"></div>";
 				console.log(dest);
 				dest.insertAdjacentHTML("beforeend",wk);
-
-				// <div class="container ico"><img class="ico" src="Screenshot_1.png"></div>
 
 				//div .content
 				wk="<div class=\"container content\"></div>";
