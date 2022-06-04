@@ -53,8 +53,6 @@ function run(x){
 				const m = x["data"][dsel]["cont"][i]["member"];
 				wk ="";
 
-				const post="";
-
 				// div .post
 				dest.insertAdjacentElement("beforeend",div);
 				dest=dest.lastElementChild;
@@ -85,10 +83,11 @@ function run(x){
 				dest.insertAdjacentHTML("beforeend",wk);
 
 				dest=document.getElementById("p"+i).getElementsByClassName("data")[0];
+				// サニタイズ
 				d=d.replace(/<.?script.*?>/g,'::');
 				if(d.charAt(0)=='<'){
 					dest.insertAdjacentHTML("beforeend",d);
-					// # a処理
+					// a処理
 					if(d.charAt(1)=='a'){
 						const a = dest.lastElementChild;
 						let wk=d.match(/http.*/g,'\n').join().replace(/".*/g,'');
@@ -106,9 +105,8 @@ function run(x){
 					dest.insertAdjacentElement("beforeend",p);
 				}
 				
+				//div .act
 				if("act" in x["data"][dsel]["cont"][i]){
-
-					//div.act
 					dest=document.getElementById("p"+i).getElementsByClassName("content")[0];
 					wk=`<div class="container act"></div>`;
 					dest.insertAdjacentHTML("beforeend",wk);
