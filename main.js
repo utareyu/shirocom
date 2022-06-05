@@ -115,14 +115,14 @@ function run(x){
 
 						//div .s
 						dest=document.getElementById("p"+i).getElementsByClassName("act")[0];
-						wk=`<div  id=\"a${i}${j}\"class=\"s\"></div>`;
+						wk=`<div  id="a${i}_${j}"class="s"></div>`;
 						console.log(e+" "+c);
 						dest.insertAdjacentHTML("beforeend",wk);
 						dest.lastElementChild.textContent=e+" "+c;
 
 						//span .balloon
 						dest=dest.lastElementChild;
-						wk="<span class=\"balloon\"></span>";
+						wk=`<span class="balloon"></span>`;
 						// console.log(dest);
 						dest.insertAdjacentHTML("beforeend",wk);
 						dest.lastElementChild.textContent=c+"人が反応しました";

@@ -15,10 +15,25 @@
 	nav>p{
 		width:6em;
 	}
+
+	
+	.input{
+		font-size: 80%;
+	}
+	.add{
+		font-size: 80%;
+	}
 }
 @media(min-width:650px){
 	nav>p{
 		width:12em;
+	}
+	
+	.input{
+		font-size: 100%;
+	}
+	.add{
+		font-size:100%;
 	}
 }
 
@@ -42,7 +57,6 @@ img.emoji {
 }
 
 body {
-	
 	font-family: 'Noto Sans JP',sans-serif;
 	background: var(--color-bg);
 	color: var(--color-text);
@@ -198,4 +212,27 @@ a:active{
 }
 a:visited{
 	color: #8350fb;
+}
+
+
+input:invalid {
+	border: solid 1px red;
+}
+.act button{
+	margin: 5px 10px 5px 0;
+	padding: 3px;
+	border-radius: 3px;
+}
+.add{
+	font-family: 'Noto Sans JP',sans-serif;
+	margin: 5px 10px 5px 0;
+	padding: 3px;
+	border: 1px solid #53565a;
+	border-radius: 3px;
+	background-color: #35383e;
+	color:aliceblue;
+}
+.add.btn:hover{
+	border: 1px solid #5562ea;
+	background-color: #3a3f59;
 }
