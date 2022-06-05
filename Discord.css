@@ -5,7 +5,7 @@
 	--color-bg: #36393f;
 }
 
-@media(max-width:479px){
+@media(max-width:649px){
 	body{
 		font-size: 80%;
 	}
@@ -16,7 +16,7 @@
 		width:6em;
 	}
 }
-@media(min-width:480px){
+@media(min-width:650px){
 	nav>p{
 		width:12em;
 	}
