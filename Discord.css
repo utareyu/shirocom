@@ -167,7 +167,7 @@ img{
 	flex-wrap: wrap;
 }
 
-.act div{
+.act div+button{
 	margin: 5px 0;
 	margin-left: 10px;
 	padding: 3px;
@@ -175,7 +175,7 @@ img{
 	border-radius: 3px;
 	background-color: #3a3f59;
 }
-.act div:first-child{
+.act div:first-child+button:first-child{
 	margin: 5px 0;
 }
 
@@ -221,11 +221,6 @@ a:visited{
 
 input:invalid {
 	border: solid 1px red;
-}
-.act button{
-	margin: 5px 10px 5px 0;
-	padding: 3px;
-	border-radius: 3px;
 }
 .add{
 	font-family: 'Noto Sans JP',sans-serif;
