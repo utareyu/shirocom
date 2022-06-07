@@ -167,12 +167,16 @@ img{
 	flex-wrap: wrap;
 }
 
-.act div:not(:first-child){
-	margin: 5px 0 5px 10px;
+.act div{
+	margin: 5px 0;
+	margin-left: 10px;
 	padding: 3px;
 	border: 1px solid #5562ea;
 	border-radius: 3px;
 	background-color: #3a3f59;
+}
+.act div:first-child{
+	margin: 5px 0;
 }
 
 .act div:hover{
