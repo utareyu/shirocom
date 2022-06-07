@@ -167,8 +167,8 @@ img{
 	flex-wrap: wrap;
 }
 
-.act div{
-	margin: 5px 10px 5px 0;
+.act div:not(:first-child){
+	margin: 5px 0 5px 10px;
 	padding: 3px;
 	border: 1px solid #5562ea;
 	border-radius: 3px;
