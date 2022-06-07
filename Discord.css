@@ -219,7 +219,7 @@ a:visited{
 }
 
 
-input:invalid {
+input:invalid,textarea:invalid {
 	border: solid 1px red;
 }
 .add{
