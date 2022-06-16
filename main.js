@@ -24,10 +24,13 @@ async function run(r){
 		if(t.length>10){
 			t=t.substr(0,9)+"…";
 		}
-		wk=`<p onclick="run(${i})">${t}</p>`;
+		wk=`<p style="cursor:pointer;" onclick="run(${i})">${t}</p>`;
 		console.log(t);
 		dest.insertAdjacentHTML("beforeend",wk);
 	}
+
+	wk=`<p><a href="https://utareyu.github.io/app/shirocomJSONtool/">入力補助</a></p>`;
+	document.getElementById("nav").insertAdjacentHTML("beforeend",wk);
 
 	const mem =[[],[]];
 	for(i in Object.keys(x["member"])) mem[0][i] = x["member"][i]["name"];
