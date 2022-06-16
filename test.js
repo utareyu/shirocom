@@ -14,8 +14,6 @@ async function run(r){
 	for(i in Object.keys(x["data"])){
 		let d = x["data"][i];
 		let dest = document.getElementById("head");
-		const div = document.createElement('div');
-		const p = document.createElement('p');
 		let wk ="";
 		let t=d["title"];
 		let da=x["data"][dsel]["date"];
