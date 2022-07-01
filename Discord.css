@@ -3,7 +3,6 @@
 :root[theme='Discord'] {
 	--color-text: aliceblue;
 	--color-bg: #36393f;
-	--img-max-size: calc(100% - 100px)
 }
 
 @media(max-width:649px){
