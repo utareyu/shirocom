@@ -12,7 +12,7 @@
 				{"member":2, "data":"怖すぎる<br>怖すぎる<br>何て会だ"},
 				{"member":0, "data":"札束じゃなくてカードで"},
 				{"member":2, "data":"全部怖い<br>年上の権限強すぎる<br>何それ"},
-				{"member":1, "data":"<img src=\"img/photos/IMG_9794.jpg\" width=200>"},
+				{"member":1, "data":"<img src=\"img/photos/IMG_9794.jpg\">"},
 				{"member":3, "data":"いいですね札束で<br>殴りに行きます"},
 				{"member":2, "data":"？？？？？？？？？<br>とりあえずnew✧‧˚で"},
 				{"member":1, "data":"？？？？？？？？？？？？？？"}
@@ -43,21 +43,21 @@
 				{"member":1, "data":"<span style=\"font-size: 300%;\">🍝🍝🍝😋😋😋😋</span>"},
 				{"member":0, "data":"<a href=\"https://www.nippn.co.jp/products/pasta/ohmy_premium/detail/1194339_1632.html\"></a>"},
 				{"member":2, "data":"かね！！！！！！<br>財力！！！！！！<br>財力は私もあるんです！！！！！！", "act":[{"emoji":"🍝","cnt":3},{"emoji":"😋","cnt":3}]},
-				{"member":2, "data":"🥺", "act":[{"emoji":"🥺","cnt":3},{"emoji":"🆕","cnt":3}]},
-				{"member":3,"data":"何言っても可愛い白林檎さん確定です","act":[{"emoji":"🍝","cnt":2}]},
+				{"member":2, "data":"🥺", "act":[{"emoji":"🥺","cnt":3}]},
+				{"member":3,"data":"何言っても可愛い白林檎さん確定です"},
 				{"member":2,"data":"パスタ投げさせてくれないんですか<br>たまには年下に譲ってくれて良いんですよ"},
 				{"member":1,"data":"👀"},
-				{"member":3,"data":"👃","act":[{"emoji":"🆗","cnt":2}]},
+				{"member":3,"data":"👃"},
 				{"member":1,"data":"何言っても可愛いｺｳﾁｬｻﾝさん確定です"},
 				{"member":2,"data":"草"},
-				{"member":3,"data":"白林檎さんはパスタ投げられるほうです🍝💨"},
+				{"member":3,"data":"白林檎さんはパスタ投げられるほうです🍝💨","act":[{"emoji":"🍝","cnt":2}]},
 				{"member":2,"data":"な゛ん゛で゛で゛す゛か゛<br>金ならあります"},
 				{"member":0,"data":"（金のパスタ）"},
 				{"member":2,"data":"new✧‧˚にしときますかね", "act":[{"emoji":"🆕","cnt":3}]},
 				{"member":1,"data":"また札束で黙らせますよ？"},
 				{"member":2,"data":"また追加できないんですけど<br>こわ<br>えっ怖すぎ<br>所持金いっぱいあるんですよ<br>財布に諭吉いるんですよ"},
 				{"member":3,"data":"諭吉がいっぱいある白林檎さん<br>そのまま貯めておきましょう"},
-				{"member":2,"data":"送らせて<br>ください<br>なので<br>みんなお金入れないでください"}
+				{"member":2,"data":"送らせて<br>ください<br>なので<br>みんなお金入れないでください","act":[{"emoji":"🆗","cnt":2}]}
 			]
 		}
 	]
