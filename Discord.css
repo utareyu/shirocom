@@ -3,6 +3,7 @@
 :root[theme='Discord'] {
 	--color-text: aliceblue;
 	--color-bg: #36393f;
+	--img-max-size: calc(100% - 100px)
 }
 
 @media(max-width:649px){
@@ -144,6 +145,7 @@ main
 	border-radius: 50%;
 	width: 35px;
 	height: 35px;
+	max-width: 100%;
 }
 
 .post{
@@ -160,6 +162,7 @@ main
 }
 img{
 	border-radius: 5px;
+	max-width: --img-max-size;
 }
 
 .container.act {
